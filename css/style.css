@@ -1,28 +1,317 @@
 body {
-	font-size: 15pt;
+	font-size: 15px;
 	font-family: "Open Sans Light", sans-serif;
-	line-height: 30pt;
+	line-height: 30px;
 	color: black;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .title-2{
-	font-size: 47pt;
+	font-size: 47px;
+	line-height: 120%;
 	font-family: "Gilroy ExtraBold", sans-serif;
 }
 
 .title-3 {
-	font-size: 16pt;
+	font-size: 16px;
 	font-family: "Gilroy ExtraBold", sans-serif;
 }
 
 .logo {
-	font-size: 48pt;
+	display: block;
+	font-size: 48px;
 	font-family: "Gilroy ExtraBold", sans-serif;
 	color: black;
 	text-transform: uppercase;
 	text-decoration: none;
+	padding-bottom: 20px;
+}
+
+
+.header-login,
+.username {
+	padding-left: 340px;
 }
 
 .logo-footer {
 	color: #f0c52e;
+}
+
+
+.main-header {
+	width: 1160px;
+	margin: 0 auto;
+	height: 300px;
+	background: #f1e1a0;
+	margin-top: 40px;
+}
+
+.container {
+	padding: 0 60px;
+}
+
+.header-login {
+	padding-right: 200px;
+}
+
+.exit {
+	padding-right: 60px;
+}
+
+.compare {
+	padding-right: 20px;
+}
+
+.search {
+	padding-bottom: 25px;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.catalog-products {
+	padding-right: 300px;
+}
+
+.menu-divilery {
+	padding-right: 40px;
+}
+
+.menu-guarantee {
+	padding-right: 100px;
+}
+
+.sliders {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+.sliders {
+	margin-bottom: 110px;
+}
+
+.monopod-picture {
+	width: 384px;
+	float: left;
+	margin-right: 100px;
+}
+
+.slider-1-content {
+	width: 500px;
+	float: left;
+}
+
+.features  {
+	padding: 0;
+}
+
+.features-big {
+	font-size: 36px;
+	font-family: "Gilroy Light", sans-serif;
+	line-height: 120%;
+}
+
+.features-small {
+	font-size: 13px;
+	font-family: "Open Sans Light", sans-serif;
+	line-height: 20px;
+}
+
+.features-item {
+	display: inline-block;
+	padding: 0;
+	padding-right: 80px;
+}
+
+.features-item:last-child {
+	padding-right: 0;
+}
+
+.type-items {
+	margin-bottom: 90px;
+}
+
+.type-items-content {
+	width: 160px;
+	float: left;
+	margin-right: 40px;
+}
+
+.type-items-content:last-child {
+	margin-right: 0;
+}
+
+.type-items-content div{
+	height: 160px;
+	width: 160px;
+	background-color: #f1e1a0;
+}
+
+.type-items-bg-1 img{
+	padding: 52px 34px;
+}
+
+.type-items-bg-2 img{
+	padding: 43px 38px 34px;
+}
+
+.type-items-bg-3 img{
+	padding: 40px 50px;
+}
+
+.type-items-bg-4 img{
+	padding: 50px 26px;
+}
+
+.type-items-bg-5 img{
+	padding: 32px 55px;
+}
+
+.type-items-bg-6 img{
+	padding: 50px 13px;
+}
+
+.wrapper-services {
+	min-height: 287px;
+	background: #e4e4e4;
+	margin-bottom: 105px;
+}
+
+.services-btn {
+	width: 300px;
+	float: left;
+	margin-right: 65px;
+}
+
+.dilivery {
+	width: 700px;
+	float: left;
+	background-image: url(../img/delivery.png);
+    background-repeat: no-repeat;
+    background-position: 568px 27px;
+}
+
+.dilivery p {
+	width: 460px;
+}
+
+.partners {
+	margin-bottom: 105px;
+}
+
+.about-us {
+	width: 460px;
+	min-height: 570px;
+	float: left;
+}
+
+.contacts {
+	width: 560px;
+	min-height: 570px;
+	float: right;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+}
+
+.left-column {
+	width: 270px;
+	min-height: 1290px;
+	float: left;
+	margin-right: 30px;
+}
+
+.title-right-column {
+	min-height: 70px;
+	margin-bottom: 70px;
+}
+
+
+.right-column {
+	width: 800px;
+	float: left;
+}
+
+.catalog-nav {
+	width: 760px;
+	min-height: 70px;
+	background-color: #ebebeb;
+	margin-bottom: 75px;
+}
+
+.catalog-nav li {
+	display: inline-block;
+}
+
+.catalog-nav-prev {
+	float: left;
+}
+
+.btn-prev {
+	float: left;
+	margin-right: 200px;
+	padding-left: 30px;
+}
+
+.btn-next {
+	float: right;
+	padding-right: 30px;
+}
+
+.carts-product {
+	margin-bottom: 50px;
+}
+
+.product-left {
+	width: 365px;
+	min-height: 470px;
+	float: left;
+}
+
+.product-right {
+	width: 365px;
+	min-height: 470px;
+	float: right;
+}
+
+/*Футер*/
+
+.main-footer {
+	background: #474747;
+}
+
+.footer-left {
+	width: 260px;
+	min-height: 200px;
+	float: left;
+	padding-top: 42px;
+	padding-right: 160px;
+}
+
+.footer-center {
+	width: 440px;
+	float: left;
+	padding-top: 140px;
+}
+
+.footer-right {
+	width: 360px;
+	min-height: 208px;
+	float: right;
 }

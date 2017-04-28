@@ -7,95 +7,115 @@
   </head>
   <body>
 		<header class="main-header">
-			<a class="logo" href="#">
-				Device
-			</a>
-			<input type="text" value="Поиск по сайту">
-			<a class="login" href="#">Войти</a>
-			<a href="#">Сравнить</a>
-			<a href="#">Корзина</a>
-			<div class="menu">
-				<ul>
-					<li>
-						<a  class="catalog-products" href="#">Каталог товаров</a>
-					</li>
-					<li>
-						<a  class="menu-divilery" href="#">Доставка</a>
-					</li>
-					<li>
-						<a  class="menu-guarantee" href="#">Гарантия</a>
-					</li>
-					<li>
-						<a  class="menu-contacts" href="#">Контакты</a>
-					</li>
-				</ul>
+			<div class=" container">
+				<a class="logo" href="#">
+					Device
+				</a>
+				<div  class="search">
+					<input type="text" value="Поиск по сайту">
+					<a class="header-login" href="#">Войти</a>
+					<a class="compare" href="#">Сравнить</a>
+					<a class="basket" href="#">Корзина</a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li class="catalog-products">
+							<a href="#">Каталог товаров</a>
+						</li>
+						<li class="menu-divilery">
+							<a href="#">Доставка</a>
+						</li>
+						<li class="menu-guarantee">
+							<a href="#">Гарантия</a>
+						</li>
+						<li>
+							<a  class="menu-contacts" href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main class="wrapper">
-			<section class="sliders">
-				<img src="img/slider-1.png" width="500" height="500" alt="slider-monopod">
-				<h2 class="title-2">Делай селфи, как Бен Стиллер! </h2>
-				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-				<a class="read-more" href="#">Подробнее</a>
-				<ul class="features">
-					<li>
-						<span>8,5 м</span>
-						<span>Длина палки</span>
-					</li>
-					<li>
-						<span>5 кг</span>
-						<span>Вес палки</span>
-					</li>
-					<li>
-						<span>Карбон</span>
-						<span>Материал</span>
-					</li>
-				</ul>
+			<section class="sliders clearfix">
+				<img class="monopod-picture" src="img/slider-1.png" width="384" height="486" alt="slider-monopod">
+				<div class="slider-1-content">
+					<h2 class="title-2">Делай селфи, <br> как Бен Стиллер! </h2>
+					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<a class="read-more" href="#">Подробнее</a>
+					<ul class="features">
+						<li class="features-item">
+							<span class="features-big">8,5 м</span><br>
+							<span class="features-small">Длина палки</span>
+						</li>
+						<li class="features-item">
+							<span class="features-big">5 кг</span><br>
+							<span class="features-small">Вес палки</span>
+						</li>
+						<li class="features-item">
+							<span class="features-big">Карбон</span><br>
+							<span class="features-small">Материал</span>
+						</li>
+					</ul>
+				</div>
 			</section>
-			<section class="products-list">
-				<a href="#">
-					<img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность">
+			<section class="type-items container clearfix">
+				<a class="type-items-content" href="#">
+					<div class="type-items-bg-1">
+						<img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность">
+					</div>
 					<p>Виртуальная реальность</p>
 				</a>
-				<a href="#">
-					<img  src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи">
+				<a class="type-items-content" href="#">
+					<div class="type-items-bg-2">
+						<img  src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи">
+					</div>
 					<p>Моноподы для селфи</p>
 				</a>
-				<a href="#">
-					<img  src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры">
+				<a  class="type-items-content" href="#">
+					<div class="type-items-bg-3">
+						<img  src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры">
+					</div>
 					<p>Экшн-камеры</p>
 				</a>
-				<a href="#">
-					<img  src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслеты">
+				<a  class="type-items-content" href="#">
+					<div class="type-items-bg-4">
+						<img  src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслеты">
+					</div>
 					<p>Фитнес-браслеты</p>
 				</a>
-				<a href="#">
-					<img  src="img/popular-5.png" width="56" height="98" alt="Умные часы">
+				<a  class="type-items-content" href="#">
+					<div class="type-items-bg-5">
+						<img  src="img/popular-5.png" width="56" height="98" alt="Умные часы">
+					</div>
 					<p>Умные часы</p>
 				</a>
-				<a href="#">
-					<img  src="img/popular-6.png" width="132" height="69" alt="Квадрокоптеры">
+				<a  class="type-items-content" href="#">
+					<div class="type-items-bg-6">
+						<img  src="img/popular-6.png" width="132" height="69" alt="Квадрокоптеры">
+					</div>
 					<p>Квадрокоптеры</p>
 				</a>
 			</section>
-			<section class="wrapper-sliders">
-				<ul>
-					<li>
-						<a href="#">Доставка</a>
-					</li>
-					<li>
-						<a href="#">Гарантия</a>
-					</li>
-					<li>
-						<a href="#">Кредит</a>
-					</li>
-				</ul>
-				<section class="dilivery">
-					<h2 class="title-2">Доставка</h2>
-					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-				</section>
+			<section class="wrapper-services">
+				<div class="container clearfix">
+					<ul class="services-btn">
+						<li>
+							<a href="#">Доставка</a>
+						</li>
+						<li>
+							<a href="#">Гарантия</a>
+						</li>
+						<li>
+							<a href="#">Кредит</a>
+						</li>
+					</ul>
+					<section class="dilivery">
+						<h2 class="title-2">Доставка</h2>
+						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					</section>
+				</div>
 			</section>
-			<section class="partners">
+			<section class="partners container">
 				<a class="dji" href="#">
 					<img  src="img/partners-1.png" width="260" height="100" alt="DJI">
 				</a>
@@ -109,56 +129,60 @@
 					<img  src="img/partners-4.png" width="260" height="100" alt="VIVE">
 				</a>
 			</section>
-			<section class="about-us">
-				<h2 class="title-2">О нас</h2>
-				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-				<ul>
-					<li>Деловые Линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
-				</ul>
-				<a href="#">Подробнее о нас</a>
-			</section>
-			<section class="contacs">
-				<h2 class="title-2">Контакты</h2>
-				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<img  src="img/map.png" width="560" height="222" alt="map">
-				<a href="#">Напишите нам</a>
-			</section>
+			<div class="container clearfix">
+				<section class="about-us">
+					<h2 class="title-2">О нас</h2>
+					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+					<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+					<ul>
+						<li>Деловые Линии</li>
+						<li>Автотрейдинг</li>
+						<li>ЖелДорЭкспедиция</li>
+					</ul>
+					<a href="#">Подробнее о нас</a>
+				</section>
+				<section class="contacts">
+					<h2 class="title-2">Контакты</h2>
+					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+					<img  src="img/map.png" width="560" height="222" alt="map">
+					<a href="#">Напишите нам</a>
+				</section>
+			</div>
 		</main>
-		<footer>
-			<section class="footer-left">
-				<a class="logo logo-footer" href="#">Device</a>
-				<p>г. Москва, ул. Строителей, 15</p>
-			</section>
-			<section class="footer-center">
-				<div class="footer-links">
-					<a href="#">Доставка</a>
-					<a href="#">Гарантии</a>
-					<a href="#">Контакты</a>
-				</div>
-				<div class="social-buttons">
-					<a href="#">Фейсбук</a>
-					<a href="#">Инстаграм</a>
-					<a href="#">Твиттер</a>
-				</div>
-			</section>
-			<section class="footer-right">
-				<div class="user-block">
-					<a href="#">Войти</a>
-				</div>
-				<div class="compare">
-					<a href="#">Сравнить</a>
-				</div>
-				<div class="basket">
-					<a href="#">Корзина</a>
-				</div>
-				<p>Тел.: +7(495) 495-95-95</p>
-				<a href="#">
-					<img src="img/htmlacademy.png" width="27" height="34" alt="Htmlacademy">Htmlacademy
-				</a>
-			</section>
+		<footer class="main-footer">
+			<div class="container clearfix">
+				<section class="footer-left">
+					<a class="logo logo-footer" href="#">Device</a>
+					<p>г. Москва, ул. Строителей, 15</p>
+				</section>
+				<section class="footer-center">
+					<div class="footer-links">
+						<a href="#">Доставка</a>
+						<a href="#">Гарантии</a>
+						<a href="#">Контакты</a>
+					</div>
+					<div class="social-buttons">
+						<a href="#">Фейсбук</a>
+						<a href="#">Инстаграм</a>
+						<a href="#">Твиттер</a>
+					</div>
+				</section>
+				<section class="footer-right">
+					<div class="footer-user-block">
+						<a href="#">Войти</a>
+					</div>
+					<div class="footer-compare">
+						<a href="#">Сравнить</a>
+					</div>
+					<div class="footer-basket">
+						<a href="#">Корзина</a>
+					</div>
+					<p>Тел.: +7(495) 495-95-95</p>
+					<a href="#">
+						<img src="img/htmlacademy.png" width="27" height="34" alt="Htmlacademy">Htmlacademy
+					</a>
+				</section>
+			</div>
 		</footer>
   </body>
 </html>
