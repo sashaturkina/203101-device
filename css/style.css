@@ -1,17 +1,11 @@
 body {
+	margin: 0;
+	padding: 0;
 	font-size: 15px;
 	font-family: "Open Sans Light", sans-serif;
 	line-height: 30px;
 	color: black;
-	margin: 0;
-}
-
-a {
-	text-decoration: none;
-}
-
-ul {
-	list-style-type: none;
+	
 }
 
 .clearfix::after {
@@ -31,6 +25,13 @@ ul {
 	font-family: "Gilroy ExtraBold", sans-serif;
 }
 
+.slider-1-title {
+	padding: 0;
+	margin: 0;
+}
+
+/*header*/
+
 .logo {
 	display: block;
 	font-size: 48px;
@@ -39,12 +40,6 @@ ul {
 	text-transform: uppercase;
 	text-decoration: none;
 	padding-bottom: 20px;
-}
-
-
-.header-login,
-.username {
-	padding-left: 340px;
 }
 
 .logo-footer {
@@ -56,32 +51,139 @@ ul {
 	width: 1160px;
 	margin: 0 auto;
 	height: 300px;
-	background: #f1e1a0;
+	background: #f7e296;
 	margin-top: 40px;
+	padding-top: 40px;
+}
+
+.main-header .logo {
+	position: absolute;
+	top: 26px;
+	left: 153px;
+	
 }
 
 .container {
 	padding: 0 60px;
 }
 
-.header-login {
-	padding-right: 200px;
+.search {
+	position: relative;
+  	margin-bottom: 20px;
+	float: left;
+	width: 450px;
+	height: 50px;
+}
+
+.user-block {
+	float: right;
+	width: 475px;
+	margin-top: 5px;
+}
+
+.user-block  a {
+	position: relative;
+	font-family: "Open Sans Light", "Times New Roman", sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin-left: 37px;
+	padding-left: 25px;
+}
+
+.user-block  a::before {
+	content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 14px;
+    height: 13px;
+    background: url(../img/sprite.png) no-repeat;
 }
 
 .exit {
-	padding-right: 60px;
+	float: left;
+	margin-left: 0;
 }
 
-.compare {
-	padding-right: 20px;
+.exit::before {
+	top: 50%;
+	left: -1px;
+	background-position: -10px -46px;
 }
 
-.search {
-	padding-bottom: 25px;
+.compare::before {
+	left: 2px;
+    background-position: -74px -10px;
+}
+
+.basket::before {
+	background-position: -10px -10px;
+}
+
+.menu {
+	position: relative;
+	clear: both;
 }
 
 .menu li {
 	display: inline-block;
+}
+
+.menu  a {
+	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: black;
+	line-height: 120%;
+	text-transform: uppercase;
+	letter-spacing: 3.5px;
+	text-decoration: none;
+}
+
+.list-menu {
+	padding: 0;
+	margin: 0;
+}
+
+.list-menu > li {
+	position: relative;
+}
+
+.list-menu .sub-menu {
+	position: absolute;
+	left: -60px;
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list-menu > li:hover .sub-menu {
+	display: block;
+	width: 1100px;
+	height: 150px;
+	padding-left: 60px;
+	background-color: #f1e1a0;
+}
+
+.sub-menu a {
+	font-family: "Open Sans Light", "Times New Roman", sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	font-weight: light;
+	text-decoration: none;
+	color: black; 
+	padding: 5px 0;
+	margin-bottom: 20px;
+	margin-right: 60px;
+	text-transform: none;
+	letter-spacing: 3.5px;
+}
+
+.sub-menu li {
+	min-width: 200px;
 }
 
 .catalog-products {
@@ -96,12 +198,15 @@ ul {
 	padding-right: 100px;
 }
 
+/*sliders*/
+
 .sliders {
 	width: 1020px;
 	margin: 0 auto;
 }
 
 .sliders {
+	margin-top: -108px;
 	margin-bottom: 110px;
 }
 
@@ -111,9 +216,10 @@ ul {
 	margin-right: 100px;
 }
 
-.slider-1-content {
-	width: 500px;
-	float: left;
+.description-slider {
+	margin-top: 75px;
+	width: 510px;
+	float: right;
 }
 
 .features  {
@@ -159,7 +265,7 @@ ul {
 .type-items-content div{
 	height: 160px;
 	width: 160px;
-	background-color: #f1e1a0;
+	background-color: #f7e296;
 }
 
 .type-items-bg-1 img{
@@ -214,6 +320,24 @@ ul {
 	margin-bottom: 105px;
 }
 
+.partners a {
+	display: block;
+	float: left;
+	margin-right: 40px;
+}
+
+.partners a:last-child {
+	margin-right: 0;
+}
+
+.partner-dji {
+	display: none;
+}
+
+.dji:hover {
+	
+}
+
 .about-us {
 	width: 460px;
 	min-height: 570px;
@@ -248,6 +372,12 @@ ul {
 	float: left;
 }
 
+.page-num {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
 .catalog-nav {
 	width: 760px;
 	min-height: 70px;
@@ -257,6 +387,7 @@ ul {
 
 .catalog-nav li {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .catalog-nav-prev {

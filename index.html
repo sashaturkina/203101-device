@@ -2,25 +2,36 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
 		<header class="main-header">
-			<div class=" container">
+			<div class="container clearfix">
 				<a class="logo" href="#">
 					Device
 				</a>
-				<div  class="search">
+				<form class="search">
 					<input type="text" value="Поиск по сайту">
-					<a class="header-login" href="#">Войти</a>
+				</form>
+				<div class="user-block clearfix">
+					<a class="exit" href="#">Войти</a>
 					<a class="compare" href="#">Сравнить</a>
 					<a class="basket" href="#">Корзина</a>
 				</div>
-				<div class="menu">
-					<ul>
+				<nav class="menu">
+					<ul class="list-menu">
 						<li class="catalog-products">
 							<a href="#">Каталог товаров</a>
+							<ul class="sub-menu">
+								<li><a href="#">Виртуальная реальность</a></li>
+								<li><a href="#">Фитнес-браслеты</a></li>
+								<li><a href="#">Квадрокоптеры</a></li><br>
+								<li><a href="#">Моноподы для селфи</a></li>
+								<li><a href="#">Умные часы</a></li>
+								<li><a href="#">Экшн-камеры</a></li>
+							</ul>
 						</li>
 						<li class="menu-divilery">
 							<a href="#">Доставка</a>
@@ -32,31 +43,61 @@
 							<a  class="menu-contacts" href="#">Контакты</a>
 						</li>
 					</ul>
-				</div>
+				</nav>
 			</div>
 		</header>
 		<main class="wrapper">
-			<section class="sliders clearfix">
-				<img class="monopod-picture" src="img/slider-1.png" width="384" height="486" alt="slider-monopod">
-				<div class="slider-1-content">
-					<h2 class="title-2">Делай селфи, <br> как Бен Стиллер! </h2>
-					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-					<a class="read-more" href="#">Подробнее</a>
-					<ul class="features">
-						<li class="features-item">
-							<span class="features-big">8,5 м</span><br>
-							<span class="features-small">Длина палки</span>
-						</li>
-						<li class="features-item">
-							<span class="features-big">5 кг</span><br>
-							<span class="features-small">Вес палки</span>
-						</li>
-						<li class="features-item">
-							<span class="features-big">Карбон</span><br>
-							<span class="features-small">Материал</span>
-						</li>
-					</ul>
-				</div>
+			<section class="sliders">
+	<!--			<section class="slider-1 clearfix">
+					<img class="monopod-picture" src="img/slider-1.png" width="384" height="486" alt="slider-monopod">
+					<div class="description-slider">
+						<h2 class="title-2 slider-1-title">Делай селфи, <br> как Бен Стиллер! </h2>
+						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+						<a class="read-more" href="#">Подробнее</a>
+						<ul class="features">
+							<li class="features-item">
+								<span class="features-big">8,5 м</span><br>
+								<span class="features-small">Длина палки</span>
+							</li>
+							<li class="features-item">
+								<span class="features-big">5 кг</span><br>
+								<span class="features-small">Вес палки</span>
+							</li>
+							<li class="features-item">
+								<span class="features-big">Карбон</span><br>
+								<span class="features-small">Материал</span>
+							</li>
+						</ul>
+					</div>
+				</section> 
+				<section class="slider-2 clearfix">
+					<img class="watch-picture" src="img/slider-2.png" width="384" height="486" alt="slider-monopod">
+					<div class="description-slider">
+						<h2 class="title-2 slider-2-title">Худеем правильно!</h2>
+						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+						<a class="read-more" href="#">Подробнее</a>
+						<span class="features-big">48 часов</span><br>
+						<span class="features-small">Без подзарядки</span>
+					</div>
+				</section>-->
+				<section class="slider-3 clearfix">
+					<img class="copter-picture" src="img/slider-3.png" width="384" height="486" alt="slider-copter">
+					<div class="description-slider">
+						<h2 class="title-2 slider-1-title">Порхает как бабочка,<br> жалит как пчела!</h2>
+						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+						<a class="read-more" href="#">Подробнее</a>
+						<ul class="features">
+							<li class="features-item">
+								<span class="features-big">800 м</span><br>
+								<span class="features-small">Дальность полета</span>
+							</li>
+							<li class="features-item">
+								<span class="features-big">50 м</span><br>
+								<span class="features-small">Радиус поражения</span>
+							</li>							
+						</ul>
+					</div>
+				</section>
 			</section>
 			<section class="type-items container clearfix">
 				<a class="type-items-content" href="#">
@@ -115,9 +156,10 @@
 					</section>
 				</div>
 			</section>
-			<section class="partners container">
+			<section class="partners container clearfix">
 				<a class="dji" href="#">
 					<img  src="img/partners-1.png" width="260" height="100" alt="DJI">
+					<img class="partner-dji" src="img/partners-1-hover.png" width="260" height="100" alt="DJI">
 				</a>
 				<a class="spgadgets" href="#">
 					<img  src="img/partners-2.png" width="260" height="100" alt="SPGADGETS">
