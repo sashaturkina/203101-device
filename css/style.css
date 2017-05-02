@@ -78,22 +78,20 @@ body {
 .user-block {
 	float: right;
 	width: 475px;
-	margin-top: 5px;
 }
 
-.user-block  a {
+.user-block-item {
 	position: relative;
+	float: right;
 	font-family: "Open Sans Light", "Times New Roman", sans-serif;
 	font-size: 15px;
 	line-height: 36px;
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
-	margin-left: 37px;
-	padding-left: 25px;
 }
 
-.user-block  a::before {
+.user-block-item::before {
 	content: "";
     position: absolute;
     top: 4px;
@@ -108,18 +106,25 @@ body {
 	margin-left: 0;
 }
 
+.basket {
+	margin-left: 65px;
+}
+
 .exit::before {
-	top: 50%;
-	left: -1px;
+	top: 12px;
+	left: -25px;
 	background-position: -10px -46px;
 }
 
 .compare::before {
-	left: 2px;
+	top: 14px;
+	left: -21px;
     background-position: -74px -10px;
 }
 
 .basket::before {
+	top: 12px;
+	left: -25px;
 	background-position: -10px -10px;
 }
 
@@ -163,64 +168,103 @@ body {
 .list-menu > li:hover .sub-menu {
 	display: block;
 	width: 1100px;
-	height: 150px;
+	height: 200px;
 	padding-left: 60px;
-	background-color: #f1e1a0;
+	background-color: #f7e296;
+	z-index: 1;
 }
 
 .sub-menu a {
 	font-family: "Open Sans Light", "Times New Roman", sans-serif;
 	font-size: 15px;
 	line-height: 36px;
-	font-weight: light;
 	text-decoration: none;
 	color: black; 
 	padding: 5px 0;
 	margin-bottom: 20px;
-	margin-right: 60px;
 	text-transform: none;
-	letter-spacing: 3.5px;
+	letter-spacing: 1px;
 }
 
 .sub-menu li {
 	min-width: 200px;
 }
 
-.catalog-products {
-	padding-right: 300px;
+.catalog-products a {
+	position: relative;
+	padding-right: 319px;
+}
+
+.index-catalog::after{
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 20px;
+	left: 20px;
+	background-image: url(../img/sprite.png) no-repeat;
+	background-position: -116px -98px;
 }
 
 .menu-divilery {
-	padding-right: 40px;
+	padding-right: 30px;
 }
 
 .menu-guarantee {
 	padding-right: 100px;
 }
 
+.menu-contacts {
+	float: right;
+}
+
 /*sliders*/
 
-.sliders {
-	width: 1020px;
-	margin: 0 auto;
-}
 
 .sliders {
 	margin-top: -108px;
 	margin-bottom: 110px;
 }
 
-.monopod-picture {
-	width: 384px;
-	float: left;
-	margin-right: 100px;
+.center {
+	width: 1160px;
+	height: 400px;
+    margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.sliders-content {
+	position: relative;
+    top: -152px;
+   	min-height: 400px;
+    padding-right: 50px;
+}
+
+.sliders-content img {
+	padding-left: 90px;
 }
 
 .description-slider {
-	margin-top: 75px;
+	margin-top: 80px;
 	width: 510px;
 	float: right;
 }
+
+.description-slider img {
+	float: left;
+}
+
+.site-button {
+	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-size: 18px;
+	line-height: 120%;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 3.5px;
+	color: black;
+}
+
+/*features*/
 
 .features  {
 	padding: 0;
@@ -249,12 +293,20 @@ body {
 }
 
 .type-items {
-	margin-bottom: 90px;
+	width: 1160px;
+	margin: 0 auto;
+	margin-bottom: 170px;
 }
 
 .type-items-content {
-	width: 160px;
 	float: left;
+	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-size: 18px;
+	line-height: 120%;
+	color: black;
+	text-decoration: none;
+	min-height: 250px;
+	width: 160px;
 	margin-right: 40px;
 }
 
@@ -266,7 +318,9 @@ body {
 	height: 160px;
 	width: 160px;
 	background-color: #f7e296;
+	margin-bottom: 33px;
 }
+
 
 .type-items-bg-1 img{
 	padding: 52px 34px;
@@ -293,23 +347,49 @@ body {
 }
 
 .wrapper-services {
-	min-height: 287px;
+	height: 287px;
 	background: #e4e4e4;
-	margin-bottom: 105px;
+	margin-bottom: 95px;
+}
+
+.services-container {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+.services-btn-container{
+	position: relative;
+	top: -101px;
+	width: 276px;
+	float: left;
+	min-height: 325px;
+	border-right: 7px solid black;
 }
 
 .services-btn {
-	width: 300px;
-	float: left;
-	margin-right: 65px;
+	padding-left: 0;
+	padding-top: 70px;
+}
+
+.services-btn li {
+	margin-bottom: 35px;
+	list-style: none;
+	
 }
 
 .dilivery {
+	position: relative;
+	margin-top: -70px;
+	margin-left: 118px;
 	width: 700px;
 	float: left;
 	background-image: url(../img/delivery.png);
     background-repeat: no-repeat;
-    background-position: 568px 27px;
+    background-position: 558px 55px;
+}
+
+.dilivery h2 {
+	margin-bottom: 25px;
 }
 
 .dilivery p {
@@ -326,16 +406,24 @@ body {
 	margin-right: 40px;
 }
 
+.partners img {
+	opacity: 0.2;
+}
+
 .partners a:last-child {
 	margin-right: 0;
 }
 
-.partner-dji {
+.partner-hover {
 	display: none;
 }
 
-.dji:hover {
-	
+.partner-picture:hover {
+	display: none;
+}
+
+.partner-hover:hover {
+	display: block;
 }
 
 .about-us {
