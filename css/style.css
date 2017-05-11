@@ -1,31 +1,31 @@
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: url('gilroyextrabold-webfont.woff2') format('woff2'),
-         url('gilroyextrabold-webfont.woff') format('woff');
+    font-family: 'Gilroy ExtraBold';
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'gilroylight';
-    src: url('gilroylight-webfont.woff2') format('woff2'),
-         url('gilroylight-webfont.woff') format('woff');
+    font-family: 'Gilroy Light';
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+         url('../fonts/gilroylight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'open_sanslight';
-    src: url('opensans-light-webfont.woff2') format('woff2'),
-         url('opensans-light-webfont.woff') format('woff');
+    font-family: 'Open Sans Light';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'open_sansregular';
-    src: url('opensans-regular-webfont.woff2') format('woff2'),
-         url('opensans-regular-webfont.woff') format('woff');
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,7 +34,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 15px;
-	font-family: "Open Sans Light", sans-serif;
+	font-family: "Open Sans Light", Arial, sans-serif;
 	line-height: 30px;
 	color: black;
 }
@@ -53,7 +53,7 @@ body {
 .title-1 {
 	font-size: 47px;
 	line-height: 120%;
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	letter-spacing: 0.01em;
 }
 
@@ -64,35 +64,36 @@ body {
 }
 
 .title-2{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 47px;
 	line-height: 120%;
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
 }
 
 .title-3 {
 	font-size: 16px;
-	font-family: "Gilroy ExtraBold", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
 
 .slider-title {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 120%;
     position: relative;
     z-index: 2;
     margin-top: 0;
     margin-bottom: 19px;
     margin-left: -3px;
     line-height: 56px;
-    letter-spacing: .012em;
-    word-spacing: .012em;
-}
+  }
 
 /*header*/
 
 .logo {
 	display: block;
 	font-size: 48px;
-	font-family: "Gilroy ExtraBold", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	color: black;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -166,6 +167,17 @@ body {
 	border-bottom: 2px solid black;
 }
 
+.search::before {
+	content: "";
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/sprite.png);
+	background-position: -134px -10px;
+    background-repeat: no-repeat;
+}
 
 .search-submit {
 	display: none;
@@ -179,21 +191,10 @@ body {
 }
 
 .search-submit:hover {
-	color: white;
-	background-color: black;
+	color: #fff;
+	background-color: #000;
 }
 
-.search::before {
-	content: "";
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/sprite.png);
-	background-position: -134px -10px;
-    background-repeat: no-repeat;
-}
 
 .search .search-form:focus {
     border-bottom: 2px solid black;
@@ -207,6 +208,7 @@ body {
 }
 
 .search .search-submit:active {
+	background: black;
 	color: rgba(255, 255, 255, 0.3);
 }
 
@@ -224,7 +226,7 @@ body {
 .user-block-item {
 	position: relative;
 	float: right;
-	font-family: "Open Sans Light", "Times New Roman", sans-serif;
+	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 36px;
 	text-decoration: none;
@@ -291,7 +293,7 @@ body {
 }
 
 .menu  a {
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 	color: black;
@@ -345,7 +347,7 @@ body {
 }
 
 .sub-menu a {
-	font-family: "Open Sans Light", "Times New Roman", sans-serif;
+	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 36px;
 	font-weight: 400;
@@ -373,8 +375,6 @@ body {
 
 .catalog-products > a {
 	position: relative;
-	padding-right: 36px;
-	margin-right: 283px;
 } 
 
 .index-catalog::after{
@@ -389,11 +389,8 @@ body {
 }
 
 .menu-divilery {
-	padding-right: 30px;
-}
-
-.menu-guarantee {
-	padding-right: 100px;
+	margin-right: 30px;
+	margin-left: 320px;
 }
 
 .menu-contacts {
@@ -495,7 +492,7 @@ body {
 }
 
 .slider-number {
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 179px;
 	line-height: 100%;
 	color: white;
@@ -506,7 +503,7 @@ body {
 
 .site-button {
 	position: relative;
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 120%;
 	z-index: 1;
@@ -575,13 +572,13 @@ body {
 
 .features-big {
 	font-size: 36px;
-	font-family: "Gilroy Light", sans-serif;
+	font-family: "Gilroy Light", Arial, sans-serif;
 	line-height: 120%;
 }
 
 .features-small {
 	font-size: 13px;
-	font-family: "Open Sans Light", sans-serif;
+	font-family: "Open Sans Light", Arial, sans-serif;
 	line-height: 20px;
 }
 
@@ -603,7 +600,7 @@ body {
 
 .type-items-content {
 	float: left;
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 120%;
 	color: black;
@@ -840,7 +837,7 @@ body {
 .about-us ul li{
 	position: relative;
 	padding-left: 35px;
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 40px;
 	list-style: none;
@@ -881,7 +878,7 @@ body {
 }
 
 .breadcrumbs li {
-	font-family: "Open Sans Light", "Times New Roman", sans-serif;
+	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 36px;
 	opacity: 0.3;
@@ -919,6 +916,7 @@ body {
 .catalog-wrapper {
 	width: 100%;
 	height: 100%;
+	background: linear-gradient(to right,#efefef 0%,#efefef 29%,#fff 30%,#fff 100%);
 }
 
 .filter-title  {
@@ -935,7 +933,7 @@ body {
 }
 
 .filter legend {
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	border-top: 2px solid black;
@@ -953,7 +951,7 @@ body {
 }
 
 .filter label {
-	font-family: "Open Sans Light", "Times New Roman", sans-serif;
+	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 14px;
 }
 
@@ -965,7 +963,7 @@ body {
 }
 
 .scroll-price {
-	font-family: "Gilroy", "Times New Roman", sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 14px;
 	opacity: 0.2;
 	display: inline-block;
@@ -1155,7 +1153,7 @@ body {
 }
 
 .sorting-block  a {
-	font-family: "Open Sans Regular", "Times New Roman", sans-serif;
+	font-family: "Open Sans Regular", Arial, sans-serif;
 	font-size: 14px;
 	text-decoration: none;
 	color: black;
@@ -1236,16 +1234,8 @@ body {
 	min-height: 1210px;
 	width: 269px;
 	float: left;
-	padding-left: 60px; 
-}
-
- .left-column::before {
-	content: "";
-	left: -130px;
-	position:absolute;
-	width: 460px;
-	height: 100%;
-	background-color: #ebebeb;
+	padding-left: 60px;
+	background: #efefef;
 }
 
 .right-column {
@@ -1259,7 +1249,7 @@ body {
 	float: right;
 	background-color: #fff;
 	margin-top: 15px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .product-carts {
@@ -1268,12 +1258,31 @@ body {
 	height: 466px;
 }
 
-.product-carts p {
+.new::before {
+	content: "NEW";
+	position: absolute;
+	width: 30px;
+	height: 16px;
+	padding: 22px 13px 18px 13px;
+	top: 30px;
+	right: 30px;
+	border: 2px solid black;
+	border-radius: 50%;
+	text-transform: uppercase;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 120%;
+	opacity: 0.2;
+}
+
+.product-carts > a {
 	margin: 0;
 	padding: 0;
 	float: left;
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
+	text-decoration: none;
+	color: black;
 }
 
 .product-price {
@@ -1314,7 +1323,7 @@ body {
 .btn-prev,
 .btn-next,
 .page-num {
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 16px;
 	color: black;
 	text-transform: uppercase;
@@ -1333,15 +1342,34 @@ body {
 	opacity: 1;
 }
 
+.page-num li a[href]:hover {
+	opacity: 0.6;
+}
+
+.page-num li a[href]:active{
+	opacity: 1;
+}
+
 .btn-prev {
 	float: left;
-	margin-right: 235px;
-	padding: 20px 0 20px 30px;
+	margin-right: 210px;
+	padding: 20px 30px;
 }
 
 .btn-next {
 	float: right;
-	padding: 20px 30px 20px 0;
+	padding: 20px 30px;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background-color: #d9d9d9;
+}
+
+.btn-prev:active,
+.btn-next:active {
+	background-color: #d9d9d9;
+	color: #ababab;
 }
 
 .product-left {
@@ -1376,7 +1404,7 @@ body {
 	top: 230px;
 	left: 110px;
 	display: block;
-	font-family: "Open Sans Light", "Times New Roman", sans-serif;
+	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 120%;
 	color: black;
@@ -1455,7 +1483,7 @@ body {
 
 
 .footer-left p {
-	font-family: "Open Sans Light", sans-serif;
+	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	color: #ffffff;
@@ -1468,7 +1496,7 @@ body {
 
 .footer-center {
 	min-height: 130px;
-	margin-top: 65px;
+	margin-top: 70px;
 	width: 433px;
 	float: left;
 }
@@ -1494,21 +1522,22 @@ body {
 }
 
 .footer-center-button {
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 120%;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 3.5px;
 	color: white;
+	float: left;
 }
 
-.footer-center-button {
-	padding-right: 30px;
+.footer-center-button:first-child {
+	margin-right: 35px;
 }
 
-.footer-center-button:last-child {
-	padding-right: 0;
+.footer-center-button:last-child  {
+	float: right;
 }
 
 .social-btn-fb {
@@ -1556,7 +1585,7 @@ body {
 
 .footer-user-item {
 	position: relative;
-	font-family: "Open Sans Light", "Times New Roman", sans-serif;
+	font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
     text-decoration: none;
@@ -1682,7 +1711,7 @@ body {
 	display: block;
 	font-size: 18px;
 	line-height: 120%;
-	font-family: "Gilroy ExtraBold", "Times New Roman", sans-serif;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	color: black;
 	margin-bottom: 5px;
 }
@@ -1691,7 +1720,7 @@ body {
 .write-us-form textarea{
 	font-size: 14px;
 	line-height: 120%;
-	font-family: "Open Sans", "Times New Roman", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	color: #464646;
 	border: 3px solid transparent;
 	background-color: #f2f2f2;
