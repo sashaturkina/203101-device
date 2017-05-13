@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -101,7 +101,7 @@
 					<img class="copter-picture" src="img/slider-3.png" width="526" height="334" alt="slider-copter">
 					<div class="description-slider">
 						<b class="slider-number">03</b>
-						<h2 class="title-2 slider-title">Порхает как бабочка,<br> жалит как пчела!</h2>
+						<h2 class="title-2 slider-title">Порхает как бабочка, жалит как пчела!</h2>
 						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 						<a class="site-button read-more" href="#">Подробнее</a>
 						<ul class="features">
@@ -129,7 +129,7 @@
 				<div class="type-items-bg-2 type-items-box">
 					<img  src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи">
 				</div>
-				<p>Моноподы<br> для селфи</p>
+				<p>Моноподы для селфи</p>
 			</a>
 			<a class="type-items-content" href="#">
 				<div class="type-items-bg-3 type-items-box">
@@ -163,13 +163,13 @@
 				<input type="radio" id="credit-btn" name="services-toggle">
 				<ul class="services-btn">
 					<li>
-						<label class="site-button dilivery-btn" for="dilivery-btn">Доставка</label>
+						<label for="dilivery-btn" class="site-button dilivery-btn">Доставка</label>
 					</li>
 					<li>
-						<label class="site-button guarantee-btn" for="guarantee-btn">Гарантия</label>
+						<label  for="guarantee-btn" class="site-button guarantee-btn">Гарантия</label>
 					</li>
 					<li>
-						<label class="site-button credit-btn" for="credit-btn">Кредит</label>
+						<label for="credit-btn" class="site-button credit-btn">Кредит</label>
 					</li>
 				</ul>
 				<section class="dilivery-box services-item">
@@ -189,19 +189,15 @@
 		<section class="partners services-container clearfix">
 			<a class="dji partner" href="#">
 				<img class="partner-picture" src="img/partners-1.png" width="260" height="100" alt="DJI">
-				<img class="partner-hover" src="img/partners-1-hover.png" width="260" height="100" alt="DJI">
 			</a>
 			<a class="spgadgets partner" href="#">
 				<img class="partner-picture" src="img/partners-2.png" width="260" height="100" alt="SPGADGETS">
-				<img class="partner-hover"  src="img/partners-2-hover.png" width="260" height="100" alt="SPGADGETS">
 			</a>
 			<a class="gopro partner" href="#">
 				<img class="partner-picture" src="img/partners-3.png" width="260" height="100" alt="GoPro">
-				<img class="partner-hover"  src="img/partners-3-hover.png" width="260" height="100" alt="GoPro">
 			</a>
 			<a class="vive partner" href="#">
 				<img class="partner-picture" src="img/partners-4.png" width="260" height="100" alt="VIVE">
-				<img class="partner-hover" src="img/partners-4-hover.png" width="260" height="100" alt="VIVE">
 			</a>
 		</section>
 		<section class="about-us-container clearfix">
@@ -219,7 +215,9 @@
 			<div class="contacts">
 				<h2 class="title-2">Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<img class="map" src="img/map.png" width="560" height="222" alt="map">
+				<a class="map js-open-map" href="#">
+					<img class="map-picture" src="img/map.png" width="560" height="222" alt="map">
+				</a>
 				<a class="site-button write-us-btn" href="#">Напишите нам</a>
 			</div>
 		</section>
@@ -256,26 +254,27 @@
 		</div>
 	</footer>
 	<div class="modal-content">
-		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<button class="modal-content-close" type="button" title="Закрыть">			Закрыть</button>
 		<form class="write-us-form" method="post">
 			<div class="name-box">
-				<label class="yours-name">Ваше имя:</label>
-					<input class="icon-user" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+				<label for="icon-user" class="yours-name">Ваше имя:</label>
+					<input class="icon-user" type="text" id="icon-user" name="login" placeholder="Представьтесь, пожалуйста">
 			</div>
 			<div class="email-box">
-				<label class="yours-email">Ваш e-mail:</label>
-					<input class="user-mail" type="text" name="email" placeholder="Для отправки макета">
+				<label for="user-mail" class="yours-email">Ваш e-mail:</label>
+					<input class="user-mail" type="text" id="user-mail" name="email" placeholder="Для отправки макета">
 			</div>
 			<div class="letter-box">
-				<label class="letter">Текст письма:</label>
-					<textarea class="review" name="review-form" rows="7" placeholder="В свободной форме"></textarea>
+				<label for="review" class="letter">Текст письма:</label>
+					<textarea class="review" id="review" name="review-form" rows="7" placeholder="В свободной форме"></textarea>
 			</div>
 			<button class="site-button modal-btn" type="submit">Отправить</button>
 		</form>
 	</div>
 	<div class="modal-content-map">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <div id="yandex-map"></div>
+	  <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6uAmPmh" width="960" height="560" style="border:0" allowfullscreen></iframe>
     </div>
+	<script src="js/script.min.js"></script>
   </body>
  </html>

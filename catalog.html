@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
     <title>Device Catalog</title>
   </head>
   <body class="catalog-body">
@@ -54,7 +54,7 @@
 				<ul class="breadcrumbs">
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Каталог товаров</a></li>
-					<li><a class="selfie">Моноподы для селфи</a></li>
+					<li><a>Моноподы для селфи</a></li>
 				</ul>
 			</section>
 			<section class="headline">
@@ -91,35 +91,35 @@
 							</fieldset>
 							<fieldset>
 								<legend>Цвет</legend>
-								<label class="catalog-checkbox">
-									 <input type="checkbox" name="black" checked>
+								<label for="black" class="catalog-checkbox">
+									 <input type="checkbox" id="black" name="black" checked>
 									 <span class="checkbox-indicator"></span>Черный
 								</label>
-								<label class="catalog-checkbox">
-									 <input type="checkbox" name="white">
+								<label for="white" class="catalog-checkbox">
+									 <input type="checkbox" id="white" name="white">
 									 <span class="checkbox-indicator"></span>Белый
 								</label>
-								<label class="catalog-checkbox">
-									 <input type="checkbox" name="blue" checked>
+								<label for="blue" class="catalog-checkbox">
+									 <input type="checkbox" id="blue" name="blue" checked>
 									 <span class="checkbox-indicator"></span>Синий
 								</label>
-								<label class="catalog-checkbox">
-									<input type="checkbox" name="red" checked>
+								<label for="red" class="catalog-checkbox">
+									<input type="checkbox" id="red" name="red" checked>
 									<span class="checkbox-indicator"></span>Красный 
 								</label>
-								<label class="catalog-checkbox">
-									 <input type="checkbox" name="pink">
+								<label for="pink" class="catalog-checkbox">
+									 <input type="checkbox" id="pink" name="pink">
 									 <span class="checkbox-indicator"></span>Розовый
 								</label>
 							</fieldset>
 							<fieldset>
 								<legend>Bluetooth</legend>
-								<label class="catalog-radio">
-									 <input class="filter-radio" type="radio" value="yes" name="bluetooth" checked>
+								<label for="filter-radio-1" class="catalog-radio">
+									 <input class="filter-radio" id="filter-radio-1" type="radio" value="yes" name="bluetooth" checked>
 									 <span class="radio-indicator"></span>Есть
 								</label>
-								<label class="catalog-radio">
-									 <input class="filter-radio" type="radio" value="no" name="bluetooth">
+								<label for="filter-radio-2" class="catalog-radio">
+									 <input class="filter-radio" id="filter-radio-2" type="radio" value="no" name="bluetooth">
 									 <span class="radio-indicator"></span>Нет
 								</label>
 							</fieldset>
